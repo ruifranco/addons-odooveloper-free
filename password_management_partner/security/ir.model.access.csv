@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_res_partner_password_all,Password management (all),password_management_partner.model_res_partner_password,,1,0,0,0
+access_res_partner_password_user,Password management (user),password_management_partner.model_res_partner_password,password_user,1,1,1,1
+access_password_management_encrypt,Password management encrypt (all),password_management_partner.model_password_management_encrypt,,1,1,1,1

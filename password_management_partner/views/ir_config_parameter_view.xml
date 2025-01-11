@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="change_password_encryption_key_form" model="ir.ui.view">
+            <field name="name">Change password encryption key</field>
+            <field name="model">ir_config_parameter.change_encryption_key_wizard</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <label for="old_key"/>
+                        <div>
+                            <field name="old_key" password="True"/>
+                            <help>
+                                (the encryption key can be found in
+                                'System Paramaters')<br/><br/>
+                            </help>
+                        </div>
+                        <field name="new_key" password="True"/>
+                        <field name="new_key_confirm" password="True"/>
+
+                    </group>
+                    <footer>
+                        <button special="cancel" string="Cancel"/>
+                        <button name="save_password" string="Save"
+                                class="oe_highlight" type="object"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+		<record id="change_password_encryption_key_action" model="ir.actions.act_window">
+			<field name="name">Change password encryption key</field>
+			<field name="res_model">ir_config_parameter.change_encryption_key_wizard</field>
+ 			<field name="view_type">form</field>
+			<field name="view_mode">form</field>
+            <field name="target">new</field>
+		</record>
+
+        <menuitem
+            name="Encryption key"
+            parent="base.menu_ir_property"
+            action="change_password_encryption_key_action"
+            id="change_password_encryption_key_menu"
+            groups="password_management_partner.password_manager"
+            sequence="10"/>
+
+
+        <record id="ir_config_parameter" model="ir.ui.view">
+            <field name="name">Readonly in password encryption parameter</field>
+            <field name="model">ir.config_parameter</field>
+            <field name="inherit_id" ref="base.view_ir_config_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='key']" position="replace">
+                    <field name="key"
+                        attrs="{'readonly':[('key','=','password.encryption_key')]}"/>
+                </xpath>
+                <xpath expr="//field[@name='value']" position="replace">
+                    <field name="value"
+                        attrs="{'readonly':[('key','=','password.encryption_key')]}"/>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- Let's hide the encryption key from the config param list -->
+        <act_window name="System Parameters"
+            res_model="ir.config_parameter"
+            id="base.ir_config_list_action"
+            domain="[('key','!=','password.encryption_key')]"/>
+
+    </data>
+</odoo>

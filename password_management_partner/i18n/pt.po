@@ -1,0 +1,188 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* password_management_partner
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0-20190220\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-25 17:23+0000\n"
+"PO-Revision-Date: 2019-02-25 17:23+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: password_management_partner
+#: model_terms:ir.ui.view,arch_db:password_management_partner.change_password_encryption_key_form
+msgid "(the encryption key can be found in\n"
+"                                'System Paramaters')<br/><br/>"
+msgstr "(a chave de codificação pode ser encontrada nos\n"
+"                                'Parâmetros de Sistema')<br/><br/>"
+
+#. module: password_management_partner
+#: model:ir.model.fields,field_description:password_management_partner.field_res_partner_password__url
+msgid "Address"
+msgstr "Endereço"
+
+#. module: password_management_partner
+#: model:ir.model.fields,field_description:password_management_partner.field_res_partner_password__user_ids
+msgid "Allowed users"
+msgstr "Utilizadores autorizados"
+
+#. module: password_management_partner
+#: model:ir.model.fields,help:password_management_partner.field_res_partner_password__user_ids
+msgid "Blank means everyone will be able to see this."
+msgstr "Deixe em branco para que todos possam ver os dados."
+
+#. module: password_management_partner
+#: model_terms:ir.ui.view,arch_db:password_management_partner.change_password_encryption_key_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: password_management_partner
+#: model:ir.actions.act_window,name:password_management_partner.change_password_encryption_key_action
+msgid "Change password encryption key"
+msgstr "Mudar a chave de codificação"
+
+#. module: password_management_partner
+#: model:ir.model,name:password_management_partner.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: password_management_partner
+#: model:ir.model.fields,field_description:password_management_partner.field_ir_config_parameter_change_encryption_key_wizard__display_name
+#: model:ir.model.fields,field_description:password_management_partner.field_password_management_encrypt__display_name
+#: model:ir.model.fields,field_description:password_management_partner.field_res_partner_password__display_name
+msgid "Display Name"
+msgstr "Nome"
+
+#. module: password_management_partner
+#: model:ir.ui.menu,name:password_management_partner.change_password_encryption_key_menu
+msgid "Encryption key"
+msgstr "Chave de codificação"
+
+#. module: password_management_partner
+#: model:ir.model.fields,field_description:password_management_partner.field_res_partner_password__field1
+#: model:ir.model.fields,field_description:password_management_partner.field_res_partner_password__field1_show
+msgid "Field A"
+msgstr "Campo A"
+
+#. module: password_management_partner
+#: model:ir.model.fields,field_description:password_management_partner.field_res_partner_password__field2
+#: model:ir.model.fields,field_description:password_management_partner.field_res_partner_password__field2_show
+msgid "Field B"
+msgstr "Campo B"
+
+#. module: password_management_partner
+#: model:ir.model.fields,field_description:password_management_partner.field_res_partner_password__field3
+#: model:ir.model.fields,field_description:password_management_partner.field_res_partner_password__field3_show
+msgid "Field C"
+msgstr "Campo C"
+
+#. module: password_management_partner
+#: model:ir.model.fields,field_description:password_management_partner.field_res_partner_password__name
+msgid "Name"
+msgstr "Nome"
+
+#. module: password_management_partner
+#: model:ir.model.fields,field_description:password_management_partner.field_ir_config_parameter_change_encryption_key_wizard__new_key
+msgid "New key"
+msgstr "Nova chave"
+
+#. module: password_management_partner
+#: model:ir.model.fields,field_description:password_management_partner.field_ir_config_parameter_change_encryption_key_wizard__new_key_confirm
+msgid "New key (confirm)"
+msgstr "Nova chave (confirmação)"
+
+#. module: password_management_partner
+#: code:addons/password_management_partner/models/ir_config_parameter.py:27
+#, python-format
+msgid "New key and it's confirmation don't match"
+msgstr "A nova chave e a sua confirmação não são iguais"
+
+#. module: password_management_partner
+#: model:ir.model.fields,field_description:password_management_partner.field_res_partner_password__note
+msgid "Note"
+msgstr "Observações"
+
+#. module: password_management_partner
+#: model:ir.model.fields,field_description:password_management_partner.field_ir_config_parameter_change_encryption_key_wizard__old_key
+msgid "Old key"
+msgstr "Chave antiga"
+
+#. module: password_management_partner
+#: code:addons/password_management_partner/models/ir_config_parameter.py:24
+#, python-format
+msgid "Old key is wrong"
+msgstr "A chave antiga está errada"
+
+#. module: password_management_partner
+#: model:ir.model.fields,field_description:password_management_partner.field_res_partner_password__partner_id
+msgid "Partner"
+msgstr "Contacto"
+
+#. module: password_management_partner
+#: model:ir.model,name:password_management_partner.model_res_partner_password
+msgid "Partner passwords"
+msgstr "Senhas do contacto"
+
+#. module: password_management_partner
+#: model:res.groups,name:password_management_partner.password_manager
+msgid "Password Management (for partners) - manager"
+msgstr "Gestão de senhas (para contactos) - gestor"
+
+#. module: password_management_partner
+#: model:res.groups,name:password_management_partner.password_user
+msgid "Password Management (for partners) - user"
+msgstr "Gestão de senhas (para contactos) - utilizador"
+
+#. module: password_management_partner
+#: model:ir.model.fields,field_description:password_management_partner.field_res_partner__password_ids
+#: model:ir.model.fields,field_description:password_management_partner.field_res_users__password_ids
+#: model_terms:ir.ui.view,arch_db:password_management_partner.view_partner_form
+msgid "Passwords"
+msgstr "Senhas"
+
+#. module: password_management_partner
+#: model_terms:ir.ui.view,arch_db:password_management_partner.change_password_encryption_key_form
+msgid "Save"
+msgstr "Gravar"
+
+#. module: password_management_partner
+#: code:addons/password_management_partner/models/ir_config_parameter.py:34
+#, python-format
+msgid "Since we could not reencrypt the passwords                                     the key was not changed"
+msgstr "Como não foi possível recodificar as senhas                                     a chave não foi mudada"
+
+#. module: password_management_partner
+#: model:ir.model,name:password_management_partner.model_ir_config_parameter
+msgid "System Parameter"
+msgstr "Parâmetro de sistema"
+
+#. module: password_management_partner
+#: model:ir.model,name:password_management_partner.model_password_management_encrypt
+msgid "Tools for encrypting passwords"
+msgstr "Ferramentas para codificar senhas"
+
+#. module: password_management_partner
+#: model:ir.model.fields,help:password_management_partner.field_res_partner_password__field3_show
+msgid "Typically, this should be used for 'domain'"
+msgstr "Tipicamente, isto deve ser usado para o 'domínio'"
+
+#. module: password_management_partner
+#: model:ir.model.fields,help:password_management_partner.field_res_partner_password__field2_show
+msgid "Typically, this should be used for 'password'"
+msgstr "Tipicamente, isto deve ser usado para a 'senha'"
+
+#. module: password_management_partner
+#: model:ir.model.fields,help:password_management_partner.field_res_partner_password__field1_show
+msgid "Typically, this should be used for 'username'"
+msgstr "Tipicamente, isto deve ser usado para o 'nome de utilizador'"
+
+#. module: password_management_partner
+#: model:ir.model,name:password_management_partner.model_ir_config_parameter_change_encryption_key_wizard
+msgid "Wizard to change password encryption key"
+msgstr "Assistente para mudar a chave de codificação"

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<odoo>
+    <data>
+
+        <record id="view_partner_form" model="ir.ui.view">
+            <field name="name">Password management</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="priority" eval="160"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[last()]" position="after">
+                    <page string="Passwords" groups="password_management_partner.password_user">
+                        <field name="password_ids">
+                            <tree>
+                                <field name="name"/>
+                                <field name="url" widget="url"/>
+                                <field name="field1_show"/>
+                                <field name="field2_show"/>
+                                <field name="field3_show"/>
+                            </tree>
+                            <form>
+                                <group>
+                                    <field name="name"/>
+                                    <field name="url" widget="url"/>
+                                    <field name="field1_show" readonly="0"/>
+                                    <field name="field2_show" readonly="0"/>
+                                    <field name="field3_show" readonly="0"/>
+                                    <field name="note"/>
+                                    <field name="user_ids"
+                                        groups="password_management_partner.password_manager"
+                                        domain="[('share','=',False)]"/>
+                                </group>
+                            </form>
+                        </field>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>
